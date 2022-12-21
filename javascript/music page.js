@@ -18,7 +18,7 @@ var itii;
 var conut = 0;
 var isplay = false;
 var fboxclick=false
-var key = "AIzaSyDG2PCCQtSuVqX418P97yE_z_D-6REytZE";
+var key = "AIzaSyDG2PCCQtSuVqX418P97yE_z_D-6REytZETEMP";
 var div = document.createElement("div");
 
 sertex.addEventListener("input", (e) => {
