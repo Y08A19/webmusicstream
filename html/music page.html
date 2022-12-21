@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musci Player</title>
+    <link rel="stylesheet" href="../css/music page.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../res/Music-icon-gradient-vector-PNG.png" />
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </head>
+  <body>
+    <img src="../res/off.png" id="off" height="30" width="30" alt="" srcset="">
+    <img src="../res/notiicon.png" height="35" width="35" id="notiicon" alt="" srcset="">
+    <h3 id="usertext">user</h3>
+    <div class="ser">
+      <input type="text" name="" id="serch" placeholder="serch" />
+      <button id="sub">
+        <img id="sericon" src="../res/pngegg (2).png" height="25" width="25" alt="" />
+      </button>
+    </div>
+
+    <div id="favbox" >
+
+    </div>
+    <div id="friend" >
+      <div style="position: relative;">
+        <input class="text" id="serchfriend" placeholder="Enter your friends email Id" type="text"><img id="btserchfriend" src="../res/addfriend.png" alt=""> 
+      </div>
+      <div id="friendser">
+
+      </div>
+          </div>
+    <div id="player"></div>
+    <div id="playbox">
+      <img src="../res/music.png" id="titimg" alt="" srcset="" />
+      <h4 id="itii">tital</h4>
+      <div id="bar">
+        <h6 id="curdur">0:00</h6>
+      <h6 id="dur">duration</h6>
+      <input
+       
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        class="slider slider"
+        id="vireange"
+      > 
+      </div>
+      <input
+       
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        id="volume"
+      />
+      <img src="../res/Larrow.png" id="Larrow"  alt="">
+      <img src="../res/share.png" id="share" alt="">
+      <img src="../res/[CITYPNG.COM]HD White Outline Heart Icon Notification Instagram PNG - 2270x1740.png" id="favbut" alt="" srcset="">
+      <img src="../res/speakericon.png" id="speaker" alt="" srcset="">
+     <div id="buttons"> 
+      <button class="button" id="play-button"><img class="bim" height="60"width="60" src="../res/icons8-play-button-circled-100.png" alt=""></button>
+      <button class="button" id="pause-button"><img height="60"width="60"class="bim" src="../res/icons8-pause-button-100.png" alt=""></button>
+      <button class="button" id="stop-button"><img height="60"width="60"class="bim" src="../res/icons8-stop-circled-100.png" alt=""></button>
+    </div>
+    <img src="../res/playlist.png" height="40" width="40" id="Playlist" alt="" srcset="">
+    </div>
+    
+    <div class="noticlass" id="notiid" >
+<center><h4>Notification</h4></center> <img src="../res/cross.png" height="25" id="notiboxcut" width="25" alt="" srcset="">
+<center><h4 id="fn">Friend name</h4></center>
+<center><button class="fnnobt" id="requseaccept">accept</button> <button class="fnnobt" id="requreject" >reject</button></center>
+
+    </div>
+   
+    <script  type="module" src="../javascript/musicpagelogout.js"></script>
+    <script  type="module" src="../javascript/friends.js"></script>
+    <script    src="../javascript/music page.js"></script>
+  </body>
+</html>

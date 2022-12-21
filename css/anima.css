@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+   height: 100%;
+   margin-top: -120px;
+    overflow: hidden;
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin:  0 4px;
+    -webkit-filter: drop-shadow(5px 5px 5px #00d5ff);
+    filter: drop-shadow(5px 5px 5px #00d5ff);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/var(--i));
+    transition: 0.3s;
+}
+.bubbles img:hover{
+ opacity: 0;
+}
+.bubbles img:nth-child(even){
+    
+    -webkit-filter: drop-shadow(5px 5px 5px #00eeff);
+    filter: drop-shadow(5px 5px 5px #00eeff);
+}
+.bubbles .bubbles img:nth-child(even):hover{
+    opacity: 0;
+   }
+
+@keyframes animate{
+    0%{
+        
+        transform: translateY(-10vh) scale(1) ;
+    }
+    100%{
+        
+        transform: translateY(80vh) scale(0) ;
+    }
+
+}

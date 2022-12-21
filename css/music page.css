@@ -1,0 +1,541 @@
+*{--shad: #00d5ff65;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: -webkit-linear-gradient(60deg, #141e30, #2d496a);
+}
+#serch {
+  width: 750px;
+  height: 35px;
+  outline: none;
+  border: none;
+
+  font-size: large;
+  background-color: rgba(240, 248, 255, 0.159);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 12px;
+}
+#serch:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#serch::placeholder {
+  font-style: italic;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  color: #a9d1ff;
+  padding: 5px;
+}
+.list {
+  height: 200px;
+  width: 400px;
+  background-color: rgba(240, 248, 255, 0.159);
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 12px;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.imgdis {
+  display: grid;
+  margin: 5px;
+}
+.ser,
+.list {
+  margin: auto;
+  width: 50%;
+
+  padding: 10px;
+}
+#playr {
+  visibility: visible;
+}
+#playbox {
+  margin-top: 5%;
+  position: absolute;
+  margin-left: 35%;
+  padding: 10px;
+  height: 350px;
+  width: 350px;
+  background-color: rgba(240, 248, 255, 0.159);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 #00d5ff65;
+  transition: 0.3s;
+  overflow: hidden;
+}
+#playbox:hover{
+  box-shadow: 0 16px 21px 0 #00d5ff65;
+}
+.hid {
+  visibility: hidden;
+}
+.vis {
+  visibility: visible;
+}
+#player {
+  position: absolute;
+  margin-top: 100%;
+  visibility: hidden;
+}
+#sub {
+  background-color: #f3f3f300;
+  outline: none;
+  border: none;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 3px;
+  cursor: pointer;
+  border-radius: 0px 25px 25px 0px;
+}
+#titimg {
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 5%;
+  height: 150px;
+  border-radius: 15px 50px;
+}
+#itii {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 180px;
+  text-shadow: 1px 1px 2px black, 0 0 25px #67a9f5, 0 0 5px #8ec1fd;
+  animation: roll 10s linear infinite;
+}
+@keyframes roll {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(350px);
+  }
+}
+#curdur {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 20px;
+}
+#dur {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 280px;
+}
+#bar {
+  position: absolute;
+  margin-top: 225px;
+}
+#buttons {
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 15%;
+}
+#vireange {
+  position: absolute;
+  width: 300px;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #ffffff44;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: radial-gradient(#243b55, #141e30);
+  -webkit-filter: drop-shadow(5px 5px 5px #141e30);
+  filter: drop-shadow(5px 5px 5px #141e30);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: radial-gradient(#243b55, #141e30);
+  cursor: pointer;
+}
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff00;
+}
+.bim {
+  transition: 0.3s;
+}
+.bim:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+#sericon {
+  transition: 0.3s;
+}
+#sericon:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+#off {
+  cursor: pointer;
+  margin: 12px;
+  position: absolute;
+}
+#favbut {
+  height: 50px;
+  width: 60px;
+  position: absolute;
+  margin-top: 225px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+#favbut:hover {
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    margin-top: 225px;
+    height: 50px;
+    width: 60px;
+  }
+
+  50% {
+    margin-top: 220px;
+    margin-left: -5px;
+    height: 60px;
+    width: 70px;
+  }
+
+  100% {
+    margin-top: 225px;
+    height: 50px;
+    width: 60px;
+  }
+}
+#Playlist {
+  position: absolute;
+  margin-top: 225px;
+  margin-left: 77%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#playlist:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+#volume {
+  -webkit-appearance: none;
+  height: 10px;
+  width: 100px;
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 76%;
+  cursor: pointer;
+  transition: 0.3s;
+  rotate: -90deg;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+#volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: radial-gradient(#243b55, #141e30);
+  -webkit-filter: drop-shadow(5px 5px 5px #141e30);
+  filter: drop-shadow(5px 5px 5px #141e30);
+  cursor: pointer;
+}
+
+#volume::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: radial-gradient(#243b55, #141e30);
+  cursor: pointer;
+}
+#speaker {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 84%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#speaker:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+#favbox {
+  position: absolute;
+  margin-top: 5%;
+  height: 370px;
+  width: 370px;
+  background-color: rgba(240, 248, 255, 0.159);
+  opacity: 0;
+  border-radius: 12px;
+  margin-left: 35%;
+  box-shadow: 0 8px 16px 0 #00d5ff65;
+  transition: 0.3s;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: grid;
+}
+#favbox:hover{
+  box-shadow: 0 16px 21px 0 #00d5ff65;
+}
+#friend{
+  margin-top: 5%;
+  position: absolute;
+  margin-left: 35%;
+  padding: 10px;
+  height: 350px;
+  width: 350px;
+  background-color: rgba(240, 248, 255, 0.159);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 #00d5ff65;
+  transition: 0.3s;
+  overflow: hidden;
+  opacity: 0;
+}
+.apper {
+  animation: apper 0.5s linear forwards;
+}
+.diss {
+  animation: diss 0.5s linear forwards;
+}
+@keyframes apper {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(400px);
+  }
+}
+@keyframes diss {
+  0% {
+    opacity: 1;
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+}
+.faccanimg {
+  margin: 20px;
+  border-radius: 12px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.favviewbox {
+  display:grid
+}
+.faccantital {
+  margin-left: 10px;
+  margin-right: 10px;
+  animation: roll 10s linear infinite;
+}
+#Larrow{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  margin-top: 155px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-filter: drop-shadow(5px 5px 5px #00d5ff65);
+  filter: drop-shadow(5px 5px 5px #00d5ff65);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#share{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  margin-top: 125px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-filter: drop-shadow(0px 5px 5px #00d5ff65);
+  filter: drop-shadow(0px 5px 5px #00d5ff65);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.text{
+  outline: none;
+  border: none;
+  font-size: large;
+  background-color: rgba(240, 248, 255, 0.159);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 12px;
+}
+.text:hover,.text::placeholder{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #a9d1ff;
+}
+#serchfriend{
+ margin-left: 10px;
+  width: 250px;
+  height: 30px;
+}
+#btserchfriend
+{
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 5px;
+height: 25px;
+width: 25px;
+transition: 0.3s;
+}
+#btserchfriend:hover{
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.btserchfriendclass{
+  height: 50px;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #5E6C7F;
+  font-size: 20px;
+  transition: 0.3s;
+  
+}
+.btserchfriendclass:hover{
+ 
+  box-shadow: 0 8px 8px 0 #00000044;
+}
+.noticlass{
+  height: 200px;
+  width: 200px;
+  background-color:#243b5580;
+  border-radius: 10%;
+  position: absolute;
+  margin-left: 85%;
+  margin-top: -500px;
+
+}
+.notiapp{
+  animation: notiapper 0.5s linear forwards;
+}
+.notidisapp{
+  animation: notidissapper 0.5s linear forwards;
+}
+@keyframes notiapper {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(450px);
+  }
+}
+@keyframes notidissapper {
+  0% {
+    transform: translateY(450px);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+.fnnobt{
+  height: 50px;
+  border-radius: 10%;
+  border: none;
+  outline: none;
+  background-color: #7d98bc;
+  transform: 0.3s;
+}
+.fnnobt:hover{
+  box-shadow: 0 8px 8px 0 #00000044;
+}
+.fboxapp{
+  animation: fboxapp 0.5s linear forwards;
+}
+.fboxdiss{
+  animation: fboxdisapp 0.5s linear forwards;
+}
+@keyframes fboxapp {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-400px);
+  }
+}
+@keyframes fboxdisapp {
+  0% {
+    transform: translateX(-400px);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+}
+#notiicon{
+  position: absolute;
+  margin-left: 75%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#notiboxcut{
+  position: absolute;
+  margin-top: -60px;
+  margin-left: 80%;
+  cursor: pointer;
+}
+
+#usertext{
+  position: absolute;
+padding: 10px;
+ background-color:#7d98bc ;
+ border-radius: 10%;
+ margin-left: 70px;
+ margin-top: 10px;
+
+}
